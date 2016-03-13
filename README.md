@@ -1,22 +1,25 @@
-#BaNkS Dynamic GApps#
-#by BaNkS#
+#DU TBO GAPPS#
+#Based on BaNkS gapps#
 
-**HOW TO USE:**
+For ARM & ARM64 devices.
+DU TBO GAPPS = Blacked out themed
+DU TBO GAPPS CLEAR = Transparent themed
 
-* Get into the base of this repo
-* . mkgapps.sh
-* Script will decompress all apks, zipalign all apks, zip, and sign the completed GApp packages
-* Completed GApp zips will be in the out directory
-* Both zips are the same as one zip needs to have a static name for Dirty Unicorns ROM OTA purposes
-
-**PREREQUISITES:**
-
-* A full Linux system with an Android build system setup
-* Java 7 or higher
-* realpath binary "sudo apt-get install realpath"
+They include
+Hangouts
+YouTube
+Google Play Store
+Google App
+Google Now Launcher
+Google Calendar
+TBO App
+*Gmail
+*Google Plus
 
 **CREDITS:**
-
+* Banks
+* Team Black Out
+* Dirty Unicorns
 * Google
 * CyanogenMod
 * TKruzze

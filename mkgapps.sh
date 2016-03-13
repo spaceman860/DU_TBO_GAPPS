@@ -13,40 +13,20 @@
 #    GNU General Public License for more details.
 
 # Pretty ascii art
-echo "._______.._______..__...._..___..._.._______................";
-echo "|.._....||..._...||..|..|.||...|.|.||.......|...............";
-echo "|.|_|...||..|_|..||...|_|.||...|_|.||.._____|...............";
-echo "|.......||.......||.......||......_||.|_____................";
-echo "|.._...|.|.......||.._....||.....|_.|_____..|...............";
-echo "|.|_|...||..._...||.|.|...||...._..|._____|.|...............";
-echo "|_______||__|.|__||_|..|__||___|.|_||_______|...............";
-echo ".______...__...__..__...._.._______..__...__..___..._______.";
-echo "|......|.|..|.|..||..|..|.||..._...||..|_|..||...|.|.......|";
-echo "|.._....||..|_|..||...|_|.||..|_|..||.......||...|.|.......|";
-echo "|.|.|...||.......||.......||.......||.......||...|.|.......|";
-echo "|.|_|...||_....._||.._....||.......||.......||...|.|......_|";
-echo "|.......|..|...|..|.|.|...||..._...||.||_||.||...|.|.....|_.";
-echo "|______|...|___|..|_|..|__||__|.|__||_|...|_||___|.|_______|";
-echo "._______.._______.._______.._______.._______................";
-echo "|.......||..._...||.......||.......||.......|...............";
-echo "|....___||..|_|..||...._..||...._..||.._____|...............";
-echo "|...|.__.|.......||...|_|.||...|_|.||.|_____................";
-echo "|...||..||.......||....___||....___||_____..|...............";
-echo "|...|_|.||..._...||...|....|...|....._____|.|...............";
-echo "|_______||__|.|__||___|....|___|....|_______|...............";
+echo "DU TBO GAPPS CLEAR";
+
 
 # Define paths && variables
-APP_DIRS="dynamic/FaceLock/arm/app/FaceLock dynamic/FaceLock/arm64/app/FaceLock dynamic/PrebuiltGmsCore/arm/priv-app/PrebuiltGmsCore dynamic/PrebuiltGmsCore/arm64/priv-app/PrebuiltGmsCore dynamic/SetupWizard/phone/priv-app/SetupWizard dynamic/SetupWizard/tablet/priv-app/SetupWizard dynamic/Velvet/arm/priv-app/Velvet dynamic/Velvet/arm64/priv-app/Velvet system/app/ChromeBookmarksSyncAdapter system/app/GoogleCalendarSyncAdapter system/app/GoogleContactsSyncAdapter system/app/GoogleTTS system/priv-app/GoogleBackupTransport system/priv-app/GoogleFeedback system/priv-app/GoogleLoginService system/priv-app/GoogleOneTimeInitializer system/priv-app/GooglePartnerSetup system/priv-app/GoogleServicesFramework system/priv-app/HotwordEnrollment system/priv-app/Phonesky"
+APP_DIRS="dynamic/FaceLock/arm/app/FaceLock dynamic/FaceLock/arm64/app/FaceLock dynamic/PrebuiltGmsCore/arm/priv-app/PrebuiltGmsCore dynamic/PrebuiltGmsCore/arm64/priv-app/PrebuiltGmsCore dynamic/SetupWizard/phone/priv-app/SetupWizard dynamic/SetupWizard/tablet/priv-app/SetupWizard dynamic/Velvet/arm/priv-app/Velvet dynamic/Velvet/arm64/priv-app/Velvet system/app/CalendarGoogle system/app/ChromeBookmarksSyncAdapter system/app/Gmail system/app/GoogleCalendarSyncAdapter system/app/GoogleContactsSyncAdapter system/app/GoogleExchange system/app/GoogleHome system/app/GoogleTTS system/app/Hangouts system/app/PlusOne system/app/TBO system/app/YouTube system/priv-app/GoogleBackupTransport system/priv-app/GoogleFeedback system/priv-app/GoogleLoginService system/priv-app/GoogleOneTimeInitializer system/priv-app/GooglePartnerSetup system/priv-app/GoogleServicesFramework system/priv-app/HotwordEnrollment system/priv-app/Phonesky"
 TOOLSDIR=$(realpath .)/tools
 GAPPSDIR=$(realpath .)/files
 FINALDIR=$(realpath .)/out
-ZIPNAME1TITLE=BaNkS_Dynamic_GApps
-ZIPNAME1VERSION=6.x.x
-ZIPNAME1DATE=$(date +%-m-%-e-%-y)_$(date +%H:%M)
-ZIPNAME2TITLE=BANKS_GAPPS
-ZIPNAME2VERSION=6.XX
+ZIPNAME1TITLE=DU_TBO_GAPPS
+ZIPNAME1VERSION=CLEAR
+ZIPNAME1DATE=$(date +%-m-%-e-%-y)
+ZIPNAME2TITLE=DU_TBO_GAPPS_CLEAR
 ZIPNAME1="$ZIPNAME1TITLE"_"$ZIPNAME1VERSION"_"$ZIPNAME1DATE".zip
-ZIPNAME2="$ZIPNAME2TITLE"_"$ZIPNAME2VERSION".zip
+ZIPNAME2="$ZIPNAME2TITLE".zip
 
 dcapk() {
 export PATH=$TOOLSDIR:$PATH
@@ -82,6 +62,6 @@ cp -f "$FINALDIR"/"$ZIPNAME1" "$FINALDIR"/"$ZIPNAME2"
 END=$(date +%s)
 
 echo " "
-echo "All done creating GApps!"
+echo "All done creating DU TBO GAPPS CLEAR GApps!"
 echo "Total time elapsed: $(echo $(($END-$BEGIN)) | awk '{print int($1/60)"mins "int($1%60)"secs "}') ($(echo "$END - $BEGIN" | bc) seconds)"
 echo "Completed GApp zips are located in the '$FINALDIR' directory"
