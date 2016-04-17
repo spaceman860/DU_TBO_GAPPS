@@ -69,6 +69,13 @@ elif (echo "$device_architecture" | grep -qi "arm64"); then
   cp -rf $tmp_path/Velvet/arm64/* /system
 fi
 
+# YouTube
+if (echo "$device_architecture" | grep -i "armeabi" | grep -qiv "arm64"); then
+  cp -rf $tmp_path/YouTube/arm/* /system
+elif (echo "$device_architecture" | grep -qi "arm64"); then
+  cp -rf $tmp_path/YouTube/arm64/* /system
+fi
+
 # Make required symbolic links
 if (echo "$device_architecture" | grep -i "armeabi" | grep -qiv "arm64"); then
   mkdir -p /system/app/FaceLock/lib/arm
