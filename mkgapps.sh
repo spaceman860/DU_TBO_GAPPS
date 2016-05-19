@@ -19,14 +19,16 @@ echo "DU TBO GAPPS";
 # Define paths && variables
 APP_DIRS="dynamic/FaceLock/arm/app/FaceLock
           dynamic/FaceLock/arm64/app/FaceLock
+          dynamic/Hangouts/arm/app/Hangouts
+          dynamic/Hangouts/arm64/app/Hangouts
+          dynamic/YouTube/arm/app/YouTube
+          dynamic/YouTube/arm64/app/YouTube
           dynamic/PrebuiltGmsCore/arm/priv-app/PrebuiltGmsCore
           dynamic/PrebuiltGmsCore/arm64/priv-app/PrebuiltGmsCore
           dynamic/SetupWizard/phone/priv-app/SetupWizard
           dynamic/SetupWizard/tablet/priv-app/SetupWizard
           dynamic/Velvet/arm/priv-app/Velvet
           dynamic/Velvet/arm64/priv-app/Velvet
-          dynamic/YouTube/arm/app/YouTube
-          dynamic/YouTube/arm64/app/YouTube
           system/app/CalendarGoogle
           system/app/ChromeBookmarksSyncAdapter
           system/app/Gmail system/app/GoogleCalendarSyncAdapter
@@ -34,7 +36,6 @@ APP_DIRS="dynamic/FaceLock/arm/app/FaceLock
           system/app/GoogleExchange
           system/app/GoogleHome
           system/app/GoogleTTS
-          system/app/Hangouts
           system/app/PlusOne
           system/app/TBO
           system/priv-app/GoogleBackupTransport
